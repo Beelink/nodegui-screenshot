@@ -1,0 +1,28 @@
+{
+  "name": "nodegui-screenshot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Eugene Volynko <volynko.ua@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack && qode ./dist/index.js",
+    "debug": "webpack && qode --inspect ./dist/index.js"
+  },
+  "dependencies": {
+    "@nodegui/nodegui": "^0.30.2",
+    "@nodegui/os-utils": "^1.1.2",
+    "screenshot-desktop": "^1.12.5"
+  },
+  "devDependencies": {
+    "@nodegui/packer": "^1.4.1",
+    "@types/node": "^13.9.1",
+    "file-loader": "^4.2.0",
+    "node-loader": "^0.6.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
